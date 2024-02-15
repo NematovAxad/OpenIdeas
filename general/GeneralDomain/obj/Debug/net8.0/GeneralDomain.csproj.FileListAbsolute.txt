@@ -1,0 +1,15 @@
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/bin/Debug/net8.0/GeneralDomain.deps.json
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/bin/Debug/net8.0/GeneralDomain.runtimeconfig.json
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/bin/Debug/net8.0/GeneralDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/bin/Debug/net8.0/GeneralDomain.pdb
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/Debug/net8.0/GeneralDomain.csproj.AssemblyReference.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/Debug/net8.0/GeneralDomain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/Debug/net8.0/GeneralDomain.AssemblyInfoInputs.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/Debug/net8.0/GeneralDomain.AssemblyInfo.cs
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/Debug/net8.0/GeneralDomain.csproj.CoreCompileInputs.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/Debug/net8.0/GeneralDomain.sourcelink.json
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/Debug/net8.0/GeneralDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/Debug/net8.0/refint/GeneralDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/Debug/net8.0/GeneralDomain.pdb
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/Debug/net8.0/GeneralDomain.genruntimeconfig.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/Debug/net8.0/ref/GeneralDomain.dll

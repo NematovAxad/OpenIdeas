@@ -1,0 +1,16 @@
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/bin/Debug/net8.0/IdeaDomain.deps.json
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/bin/Debug/net8.0/IdeaDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/bin/Debug/net8.0/IdeaDomain.pdb
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/bin/Debug/net8.0/GeneralDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/bin/Debug/net8.0/GeneralDomain.pdb
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/Debug/net8.0/IdeaDomain.csproj.AssemblyReference.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/Debug/net8.0/IdeaDomain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/Debug/net8.0/IdeaDomain.AssemblyInfoInputs.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/Debug/net8.0/IdeaDomain.AssemblyInfo.cs
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/Debug/net8.0/IdeaDomain.csproj.CoreCompileInputs.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/Debug/net8.0/IdeaDomain.sourcelink.json
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/Debug/net8.0/IdeaDomain.csproj.CopyComplete
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/Debug/net8.0/IdeaDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/Debug/net8.0/refint/IdeaDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/Debug/net8.0/IdeaDomain.pdb
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/Debug/net8.0/ref/IdeaDomain.dll

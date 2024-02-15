@@ -1,0 +1,519 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaWebService/IdeaWebService.csproj": {}
+  },
+  "projects": {
+    "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
+        "projectName": "GeneralApplication",
+        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
+        "packagesPath": "/Users/ahadjon/.nuget/packages/",
+        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralApplication/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://172.16.60.9:2000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
+              },
+              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
+                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
+        "projectName": "GeneralDomain",
+        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
+        "packagesPath": "/Users/ahadjon/.nuget/packages/",
+        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://172.16.60.9:2000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
+        "projectName": "GeneralInfrastructure",
+        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
+        "packagesPath": "/Users/ahadjon/.nuget/packages/",
+        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://172.16.60.9:2000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaApplication/IdeaApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaApplication/IdeaApplication.csproj",
+        "projectName": "IdeaApplication",
+        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaApplication/IdeaApplication.csproj",
+        "packagesPath": "/Users/ahadjon/.nuget/packages/",
+        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaApplication/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://172.16.60.9:2000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj": {
+                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj"
+              },
+              "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj": {
+                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj"
+              },
+              "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj": {
+                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj",
+        "projectName": "IdeaDomain",
+        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj",
+        "packagesPath": "/Users/ahadjon/.nuget/packages/",
+        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://172.16.60.9:2000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj",
+        "projectName": "IdeaInfrastructure",
+        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj",
+        "packagesPath": "/Users/ahadjon/.nuget/packages/",
+        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://172.16.60.9:2000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
+                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
+              },
+              "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj": {
+                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaWebService/IdeaWebService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaWebService/IdeaWebService.csproj",
+        "projectName": "IdeaWebService",
+        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaWebService/IdeaWebService.csproj",
+        "packagesPath": "/Users/ahadjon/.nuget/packages/",
+        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaWebService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "http://172.16.60.9:2000/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaApplication/IdeaApplication.csproj": {
+                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaApplication/IdeaApplication.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
