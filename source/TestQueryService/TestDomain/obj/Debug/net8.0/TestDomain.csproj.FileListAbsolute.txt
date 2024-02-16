@@ -1,0 +1,16 @@
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/bin/Debug/net8.0/TestDomain.deps.json
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/bin/Debug/net8.0/TestDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/bin/Debug/net8.0/TestDomain.pdb
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/bin/Debug/net8.0/GeneralDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/bin/Debug/net8.0/GeneralDomain.pdb
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/obj/Debug/net8.0/TestDomain.csproj.AssemblyReference.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/obj/Debug/net8.0/TestDomain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/obj/Debug/net8.0/TestDomain.AssemblyInfoInputs.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/obj/Debug/net8.0/TestDomain.AssemblyInfo.cs
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/obj/Debug/net8.0/TestDomain.csproj.CoreCompileInputs.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/obj/Debug/net8.0/TestDomain.sourcelink.json
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/obj/Debug/net8.0/TestDomain.csproj.CopyComplete
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/obj/Debug/net8.0/TestDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/obj/Debug/net8.0/refint/TestDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/obj/Debug/net8.0/TestDomain.pdb
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/obj/Debug/net8.0/ref/TestDomain.dll

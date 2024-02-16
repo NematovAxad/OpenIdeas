@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "e9BO6FqmgJJSRjqnRKGEt9U8ljErOv9jasnLRujgjcc=",
+  "Source": "TestWebService",
+  "BasePath": "_content/TestWebService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
