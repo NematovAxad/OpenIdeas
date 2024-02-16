@@ -10,9 +10,18 @@ namespace TestApplication.TestServices.Services;
 
 public class SearchService:ISearchService
 {
+    private readonly IProviderOneService _providerOneService;
+    private readonly IProviderTwoService _providerTwoService;
+
+    public SearchService(IProviderOneService providerOneService, IProviderTwoService providerTwoService)
+    {
+        _providerOneService = providerOneService;
+        _providerTwoService = providerTwoService;
+    }
+    
     public async Task<Response<SearchResponse>> SearchRoute(SearchRequest request)
     {
-        SearchResponse result = new SearchResponse();
+        SearchResponse result = new SearchResponse(){Routes = new List<RouteModel>()};
 
         ProviderOneSearchRequest firstRequest = new ProviderOneSearchRequest()
         {
@@ -37,8 +46,11 @@ public class SearchService:ISearchService
         }
         else
         {
-            await FirsProviderSearch(result, firstRequest);
-            await SecondProviderSearch(result, secondRequest);
+            var resultOne = await _providerOneService.SearchRoute(firstRequest);
+            var resultTwo = await _providerTwoService.SearchRoute(secondRequest);
+            
+            result.Routes.AddRange(resultOne.Routes);
+            result.Routes.AddRange(resultTwo.Routes);
 
             result.MinPrice = result.Routes.Select(r => r.Price).Min();
             result.MaxPrice = result.Routes.Select(r => r.Price).Max();
@@ -49,95 +61,9 @@ public class SearchService:ISearchService
 
         return result;
     }
-
-    private async Task FirsProviderSearch(SearchResponse result, ProviderOneSearchRequest request)
-    {
-        try
-        {
-            HttpClient client = new HttpClient();
-
-            var url = "http://provider-one/api/v1/search";
-            var parameters = new Dictionary<string, string>
-            {
-                { "from", request.From }, { "to", request.To },
-                { "datefrom", request.DateFrom.ToString(CultureInfo.InvariantCulture) },
-                { "dateto", request.DateTo.ToString() ?? string.Empty },
-                { "maxprice", request.MaxPrice.ToString() ?? string.Empty }
-            };
-            var encodedContent = new FormUrlEncodedContent(parameters);
-            
-            var response = await client.PostAsync(url, encodedContent).ConfigureAwait(true);
-            if (response.StatusCode == HttpStatusCode.OK)
-            {
-                var jsonString = await response.Content.ReadAsStringAsync();
-                var firstResult = JsonConvert.DeserializeObject<ProviderOneSearchResponse>(jsonString);
-                foreach (var providerOneRoute in firstResult.Routes)
-                {
-                    result.Routes.Add(new RouteModel()
-                    {
-                        Id = Guid.NewGuid(),
-                        Origin = providerOneRoute.From,
-                        OriginDateTime = providerOneRoute.DateFrom,
-                        Destination = providerOneRoute.To,
-                        DestinationDateTime = providerOneRoute.DateTo,
-                        Price = providerOneRoute.Price,
-                        TimeLimit = providerOneRoute.TimeLimit
-                    });
-                }
-            }
-        }
-        catch (HttpRequestException ex)
-        {
-            Console.WriteLine(ex);
-            throw;
-        }
-    }
-    private async Task SecondProviderSearch(SearchResponse result, ProviderTwoSearchRequest request)
-    {
-        try
-        {
-            HttpClient client = new HttpClient();
-
-            var url = "http://provider-two/api/v1/search";
-            var parameters = new Dictionary<string, string>
-            {
-                { "departure", request.Departure },
-                { "arrival", request.Arrival.ToString(CultureInfo.InvariantCulture) },
-                { "departuredate", request.DepartureDate.ToString(CultureInfo.InvariantCulture) },
-                { "mintimelimit", request.MinTimeLimit.ToString() ?? string.Empty }
-            };
-            var encodedContent = new FormUrlEncodedContent(parameters);
-            
-            var response = await client.PostAsync(url, encodedContent).ConfigureAwait(true);
-            if (response.StatusCode == HttpStatusCode.OK)
-            {
-                var jsonString = await response.Content.ReadAsStringAsync();
-                var secondResult = JsonConvert.DeserializeObject<ProviderTwoSearchResponse>(jsonString);
-                foreach (var providerTwoRoute in secondResult.Routes)
-                {
-                    result.Routes.Add(new RouteModel()
-                    {
-                        Id = Guid.NewGuid(),
-                        Origin = providerTwoRoute.Departure.Point,
-                        OriginDateTime = providerTwoRoute.Departure.Date,
-                        Destination = providerTwoRoute.Arrival.Point,
-                        DestinationDateTime = providerTwoRoute.Arrival.Date,
-                        Price = providerTwoRoute.Price,
-                        TimeLimit = providerTwoRoute.TimeLimit
-                    });
-                }
-            }
-        }
-        catch (HttpRequestException ex)
-        {
-            Console.WriteLine(ex);
-            throw;
-        }
-    }
+    
     public async Task<Response<bool>> IsServiceAvailable()
     {
-        bool isAvailable = false;
-
         using (HttpClient client = new HttpClient())
         {
             var firstUrl = "http://provider-one/api/v1/ping";
@@ -146,12 +72,10 @@ public class SearchService:ISearchService
             var secondResponse = await client.GetAsync(secondUrl);
             if (firstResponse.StatusCode == HttpStatusCode.OK || secondResponse.StatusCode== HttpStatusCode.OK)
             {
-                isAvailable = true;
+                return true;
             }
         }
-
-        if (isAvailable)
-            return true;
+            
         return false;
     }
 }

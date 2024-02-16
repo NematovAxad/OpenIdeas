@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "L/kotgO16ajnRo/cIxa8EnEIF2+L4wZEpMKOUuKYPA8/sOPyGfouFi9jfEp1GwMwL2qiTUVj4nsk7gPggyc/Sg==",
+  "dgSpecHash": "dIODQuwmSfoO0Vb3MBl7Jq0DiZfvaZNnynqb1IM3vlQM3+z1DEvSjgtXtzqvaTBIIzlVM4pH6eZcqtmPljY0gw==",
   "success": true,
   "projectFilePath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/TestWebService.csproj",
   "expectedPackageFiles": [
@@ -40,6 +40,7 @@
     "/Users/ahadjon/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.extensions.caching.memory/8.0.0/microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "/Users/ahadjon/.nuget/packages/microsoft.extensions.caching.stackexchangeredis/8.0.2/microsoft.extensions.caching.stackexchangeredis.8.0.2.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
@@ -49,7 +50,7 @@
     "/Users/ahadjon/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.extensions.objectpool/2.2.0/microsoft.extensions.objectpool.2.2.0.nupkg.sha512",
-    "/Users/ahadjon/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "/Users/ahadjon/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.identitymodel.abstractions/7.3.1/microsoft.identitymodel.abstractions.7.3.1.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.identitymodel.jsonwebtokens/7.3.1/microsoft.identitymodel.jsonwebtokens.7.3.1.nupkg.sha512",
@@ -62,6 +63,8 @@
     "/Users/ahadjon/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/npgsql/8.0.0/npgsql.8.0.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.0/npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
+    "/Users/ahadjon/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "/Users/ahadjon/.nuget/packages/stackexchange.redis/2.7.17/stackexchange.redis.2.7.17.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

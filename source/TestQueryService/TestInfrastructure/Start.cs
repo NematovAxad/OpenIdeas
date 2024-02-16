@@ -48,5 +48,10 @@ public static class Start
                     ValidateIssuerSigningKey = true,
                 };
             });
+        services.AddStackExchangeRedisCache(options =>
+        {
+            options.Configuration = Configs.Redis;
+            options.InstanceName = "RedisDemo_";
+        });
     }
 }
