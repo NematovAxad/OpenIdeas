@@ -156,6 +156,7 @@
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/UserService/UserWebService/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/UserService/UserWebService/bin/Debug/net8.0/Microsoft.OpenApi.dll
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/UserService/UserWebService/bin/Debug/net8.0/Mono.TextTemplating.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/UserService/UserWebService/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/UserService/UserWebService/bin/Debug/net8.0/Npgsql.dll
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/UserService/UserWebService/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/UserService/UserWebService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
@@ -254,4 +255,3 @@
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/UserService/UserWebService/obj/Debug/net8.0/UserWebService.pdb
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/UserService/UserWebService/obj/Debug/net8.0/UserWebService.genruntimeconfig.cache
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/UserService/UserWebService/obj/Debug/net8.0/ref/UserWebService.dll
-/Users/ahadjon/Desktop/projects/OpenIdeas/source/UserService/UserWebService/bin/Debug/net8.0/Newtonsoft.Json.dll
