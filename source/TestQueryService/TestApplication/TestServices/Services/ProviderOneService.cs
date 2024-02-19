@@ -30,47 +30,41 @@ public class ProviderOneService:IProviderOneService
         };
         
         SearchResponse result = new SearchResponse() { Routes = new List<RouteModel>() };
-        try
-        {
-            HttpClient client = new HttpClient();
 
-            var url = Configs.SearchUrlOne;
-            var parameters = new Dictionary<string, string>
+            using(HttpClient client = new HttpClient())
             {
-                { "from", firstRequest.From }, { "to", firstRequest.To },
-                { "datefrom", firstRequest.DateFrom.ToString(CultureInfo.InvariantCulture) },
-                { "dateto", firstRequest.DateTo.ToString() ?? string.Empty },
-                { "maxprice", firstRequest.MaxPrice.ToString() ?? string.Empty }
-            };
-            var encodedContent = new FormUrlEncodedContent(parameters);
-            
-            var response = await client.PostAsync(url, encodedContent).ConfigureAwait(true);
-            if (response.StatusCode == HttpStatusCode.OK)
-            {
-                var jsonString = await response.Content.ReadAsStringAsync();
-                var firstResult = JsonConvert.DeserializeObject<ProviderOneSearchResponse>(jsonString);
-                foreach (var providerOneRoute in firstResult.Routes)
+                var url = Configs.SearchUrlOne;
+                var parameters = new Dictionary<string, string>
                 {
-                    RouteModel addModel = new RouteModel()
+                    { "from", firstRequest.From }, { "to", firstRequest.To },
+                    { "datefrom", firstRequest.DateFrom.ToString(CultureInfo.InvariantCulture) },
+                    { "dateto", firstRequest.DateTo.ToString() ?? string.Empty },
+                    { "maxprice", firstRequest.MaxPrice.ToString() ?? string.Empty }
+                };
+                var encodedContent = new FormUrlEncodedContent(parameters);
+                
+                var response = await client.PostAsync(url, encodedContent).ConfigureAwait(true);
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    var jsonString = await response.Content.ReadAsStringAsync();
+                    var firstResult = JsonConvert.DeserializeObject<ProviderOneSearchResponse>(jsonString);
+                    foreach (var providerOneRoute in firstResult.Routes)
                     {
-                        Id = Guid.NewGuid(),
-                        Origin = providerOneRoute.From,
-                        OriginDateTime = providerOneRoute.DateFrom,
-                        Destination = providerOneRoute.To,
-                        DestinationDateTime = providerOneRoute.DateTo,
-                        Price = providerOneRoute.Price,
-                        TimeLimit = providerOneRoute.TimeLimit
-                    };
-                    result.Routes.Add(addModel);
-                    await _cacheRepository.AddAsync(addModel);
+                        RouteModel addModel = new RouteModel()
+                        {
+                            Id = Guid.NewGuid(),
+                            Origin = providerOneRoute.From,
+                            OriginDateTime = providerOneRoute.DateFrom,
+                            Destination = providerOneRoute.To,
+                            DestinationDateTime = providerOneRoute.DateTo,
+                            Price = providerOneRoute.Price,
+                            TimeLimit = providerOneRoute.TimeLimit
+                        };
+                        result.Routes.Add(addModel);
+                        await _cacheRepository.AddAsync(addModel);
+                    }
                 }
             }
-        }
-        catch (HttpRequestException ex)
-        {
-            Console.WriteLine(ex);
-            throw;
-        }
 
         return result;
     }

@@ -29,10 +29,8 @@ public class ProviderTwoService:IProviderTwoService
         
         SearchResponse result = new SearchResponse() { Routes = new List<RouteModel>() };
         
-        try
+        using(HttpClient client = new HttpClient())
         {
-            HttpClient client = new HttpClient();
-
             var url = Configs.SearchUrlTwo;
             var parameters = new Dictionary<string, string>
             {
@@ -65,11 +63,6 @@ public class ProviderTwoService:IProviderTwoService
                     await _cacheRepository.AddAsync(addModel);
                 }
             }
-        }
-        catch (HttpRequestException ex)
-        {
-            Console.WriteLine(ex);
-            throw;
         }
 
         return result;

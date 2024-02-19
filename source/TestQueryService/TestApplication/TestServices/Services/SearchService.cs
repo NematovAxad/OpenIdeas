@@ -30,9 +30,34 @@ public class SearchService:ISearchService
     {
         SearchResponse result = new SearchResponse(){Routes = new List<RouteModel>()};
 
+        bool firstCheck = true;
+        bool secondCheck = true;
         
-        var resultOne = await _providerOneService.SearchRoute(request);
-        var resultTwo = await _providerTwoService.SearchRoute(request);
+        SearchResponse resultOne = new SearchResponse(){Routes = new List<RouteModel>()};
+        SearchResponse resultTwo = new SearchResponse(){Routes = new List<RouteModel>()};
+        
+        try
+        {
+             resultOne = await _providerOneService.SearchRoute(request);
+        }
+        catch (Exception e)
+        {
+            firstCheck = false;
+        }
+
+        try
+        {
+             resultTwo = await _providerTwoService.SearchRoute(request);
+        }
+        catch (Exception e)
+        {
+            secondCheck = false;
+        }
+        if ( !firstCheck && !secondCheck)
+        {
+            return new ErrorResponse(HttpStatusCode.NotFound, "Services not working");
+        }
+        
         
         result.Routes.AddRange(resultOne.Routes);
         result.Routes.AddRange(resultTwo.Routes);
@@ -109,15 +134,38 @@ public class SearchService:ISearchService
 
     public async Task<Response<bool>> IsServiceAvailable()
     {
+        bool firstCheck = true;
+        bool secondCheck = true;
         using (HttpClient client = new HttpClient())
         {
-            var firstUrl = Configs.CheckUrlOne;
-            var secondUrl = Configs.CheckUrlTwo;
-            var firstResponse = await client.GetAsync(firstUrl);
-            var secondResponse = await client.GetAsync(secondUrl);
-            if (firstResponse.StatusCode == HttpStatusCode.OK || secondResponse.StatusCode== HttpStatusCode.OK)
+            try
+            {
+                var firstUrl = Configs.CheckUrlOne;
+                var firstResponse = await client.GetAsync(firstUrl);
+            }
+            catch (Exception e)
+            {
+                firstCheck = false;
+            }
+
+            try
+            {
+                var secondUrl = Configs.CheckUrlTwo;
+            
+                var secondResponse = await client.GetAsync(secondUrl);
+            }
+            catch (Exception e)
+            {
+                secondCheck = false;
+            }
+           
+            if ( firstCheck || secondCheck)
             {
                 return true;
+            }
+            else
+            {
+                return new ErrorResponse(HttpStatusCode.NotFound, "Services not working");
             }
         }
             
