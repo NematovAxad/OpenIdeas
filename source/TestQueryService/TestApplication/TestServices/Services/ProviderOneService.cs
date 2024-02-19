@@ -1,5 +1,6 @@
 using System.Globalization;
 using System.Net;
+using GeneralDomain.Configs;
 using Newtonsoft.Json;
 using TestApplication.TestServices.Interfaces;
 using TestDomain.CodeModels.Requests;
@@ -9,20 +10,29 @@ namespace TestApplication.TestServices.Services;
 
 public class ProviderOneService:IProviderOneService
 {
-    public async Task<SearchResponse> SearchRoute(ProviderOneSearchRequest request)
+    public async Task<SearchResponse> SearchRoute(SearchRequest request)
     {
+        ProviderOneSearchRequest firstRequest = new ProviderOneSearchRequest()
+        {
+            From = request.Origin,
+            To = request.Destination,
+            DateFrom = request.OriginDateTime,
+            DateTo = request.Filters?.DestinationDateTime,
+            MaxPrice = request.Filters?.MaxPrice
+        };
+        
         SearchResponse result = new SearchResponse() { Routes = new List<RouteModel>() };
         try
         {
             HttpClient client = new HttpClient();
 
-            var url = "http://provider-one/api/v1/search";
+            var url = Configs.SearchUrlOne;
             var parameters = new Dictionary<string, string>
             {
-                { "from", request.From }, { "to", request.To },
-                { "datefrom", request.DateFrom.ToString(CultureInfo.InvariantCulture) },
-                { "dateto", request.DateTo.ToString() ?? string.Empty },
-                { "maxprice", request.MaxPrice.ToString() ?? string.Empty }
+                { "from", firstRequest.From }, { "to", firstRequest.To },
+                { "datefrom", firstRequest.DateFrom.ToString(CultureInfo.InvariantCulture) },
+                { "dateto", firstRequest.DateTo.ToString() ?? string.Empty },
+                { "maxprice", firstRequest.MaxPrice.ToString() ?? string.Empty }
             };
             var encodedContent = new FormUrlEncodedContent(parameters);
             

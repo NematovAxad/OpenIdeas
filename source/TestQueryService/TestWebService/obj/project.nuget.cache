@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dIODQuwmSfoO0Vb3MBl7Jq0DiZfvaZNnynqb1IM3vlQM3+z1DEvSjgtXtzqvaTBIIzlVM4pH6eZcqtmPljY0gw==",
+  "dgSpecHash": "777Nz4YzDiNeEaIFQM1yYFhVH0qNZMSDjnYNT6Foh8ro//KZw6t6yEWhAR983Q7QWtWkU1eCnCMKhLbmn4CSDA==",
   "success": true,
   "projectFilePath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/TestWebService.csproj",
   "expectedPackageFiles": [
@@ -61,6 +61,7 @@
     "/Users/ahadjon/.nuget/packages/microsoft.net.http.headers/2.2.0/microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/Users/ahadjon/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/npgsql/8.0.0/npgsql.8.0.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.0/npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",

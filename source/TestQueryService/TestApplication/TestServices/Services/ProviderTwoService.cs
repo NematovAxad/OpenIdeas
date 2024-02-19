@@ -1,5 +1,6 @@
 using System.Globalization;
 using System.Net;
+using GeneralDomain.Configs;
 using Newtonsoft.Json;
 using TestApplication.TestServices.Interfaces;
 using TestDomain.CodeModels.Requests;
@@ -9,21 +10,29 @@ namespace TestApplication.TestServices.Services;
 
 public class ProviderTwoService:IProviderTwoService
 {
-    public async Task<SearchResponse> SearchRoute(ProviderTwoSearchRequest request)
+    public async Task<SearchResponse> SearchRoute(SearchRequest request)
     {
+        ProviderTwoSearchRequest secondRequest = new ProviderTwoSearchRequest()
+        {
+            Departure = request.Origin!,
+            Arrival = request.Destination!,
+            DepartureDate = request.OriginDateTime?? DateTime.Today,
+            MinTimeLimit = request.Filters?.MinTimeLimit
+        };
+        
         SearchResponse result = new SearchResponse() { Routes = new List<RouteModel>() };
         
         try
         {
             HttpClient client = new HttpClient();
 
-            var url = "http://provider-two/api/v1/search";
+            var url = Configs.SearchUrlTwo;
             var parameters = new Dictionary<string, string>
             {
-                { "departure", request.Departure },
-                { "arrival", request.Arrival.ToString(CultureInfo.InvariantCulture) },
-                { "departuredate", request.DepartureDate.ToString(CultureInfo.InvariantCulture) },
-                { "mintimelimit", request.MinTimeLimit.ToString() ?? string.Empty }
+                { "departure", secondRequest.Departure },
+                { "arrival", secondRequest.Arrival.ToString(CultureInfo.InvariantCulture) },
+                { "departuredate", secondRequest.DepartureDate.ToString(CultureInfo.InvariantCulture) },
+                { "mintimelimit", secondRequest.MinTimeLimit.ToString() ?? string.Empty }
             };
             var encodedContent = new FormUrlEncodedContent(parameters);
             

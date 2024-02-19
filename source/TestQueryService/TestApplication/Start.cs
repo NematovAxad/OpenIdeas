@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
+using TestDomain.Repository;
 
 namespace TestApplication;
 
@@ -11,6 +12,7 @@ public static class Start
         services.AddValidatorsFromAssembly(typeof(Start).Assembly);
         GeneralApplication.Start.BuildGeneralApplication(services);
         services.RegisterService();
+        services.AddScoped<ICacheRepository, CacheRepository>();
     }
     
     public static void RegisterService(this IServiceCollection services)

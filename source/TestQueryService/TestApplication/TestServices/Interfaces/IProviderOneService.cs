@@ -5,5 +5,5 @@ namespace TestApplication.TestServices.Interfaces;
 
 public interface IProviderOneService
 {
-    Task<SearchResponse> SearchRoute(ProviderOneSearchRequest request);
+    Task<SearchResponse> SearchRoute(SearchRequest request);
 }

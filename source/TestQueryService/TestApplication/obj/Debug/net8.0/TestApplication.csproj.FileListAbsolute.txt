@@ -20,3 +20,5 @@
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestApplication/obj/Debug/net8.0/refint/TestApplication.dll
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestApplication/obj/Debug/net8.0/TestApplication.pdb
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestApplication/obj/Debug/net8.0/ref/TestApplication.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestApplication/bin/Debug/net8.0/TestInfrastructure.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestApplication/bin/Debug/net8.0/TestInfrastructure.pdb

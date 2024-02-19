@@ -124,3 +124,10 @@
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/obj/Debug/net8.0/TestWebService.pdb
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/obj/Debug/net8.0/TestWebService.genruntimeconfig.cache
 /Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/obj/Debug/net8.0/ref/TestWebService.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/bin/Debug/net8.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/bin/Debug/net8.0/Pipelines.Sockets.Unofficial.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/bin/Debug/net8.0/StackExchange.Redis.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/bin/Debug/net8.0/TestInfrastructure.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/bin/Debug/net8.0/TestInfrastructure.pdb
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/bin/Debug/net8.0/Newtonsoft.Json.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mLdKeX42qQt4xqqNRuMIIHNBkiwG8QSiXRRkGEHu+Xd1O+HseRlkTb3ilJYI+AYFIFkML88nhzbnf1XLtBaDig==",
+  "dgSpecHash": "yw2JYPGpJpFBoo2XqZ8T0Oa2jT1iESJP7FfeXDat4zLddg8D3YncwuWD0Ch3z/l+/8wVSxv1pIjukdL5yIr/xw==",
   "success": true,
   "projectFilePath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,6 @@
     "/Users/ahadjon/.nuget/packages/microsoft.aspnetcore.routing/2.2.0/microsoft.aspnetcore.routing.2.2.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.aspnetcore.routing.abstractions/2.2.0/microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.aspnetcore.webutilities/2.2.0/microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
-    "/Users/ahadjon/.nuget/packages/microsoft.csharp/4.0.1/microsoft.csharp.4.0.1.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.dotnet.platformabstractions/2.1.0/microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.entityframeworkcore/8.0.0/microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.0/microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",
@@ -47,7 +46,7 @@
     "/Users/ahadjon/.nuget/packages/microsoft.net.http.headers/2.2.0/microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.netcore.platforms/1.0.1/microsoft.netcore.platforms.1.0.1.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/microsoft.netcore.targets/1.0.1/microsoft.netcore.targets.1.0.1.nupkg.sha512",
-    "/Users/ahadjon/.nuget/packages/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg.sha512",
+    "/Users/ahadjon/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/npgsql/8.0.0/npgsql.8.0.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.0/npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/runtime.native.system/4.0.0/runtime.native.system.4.0.0.nupkg.sha512",
@@ -56,7 +55,6 @@
     "/Users/ahadjon/.nuget/packages/system.collections/4.0.11/system.collections.4.0.11.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/system.diagnostics.debug/4.0.11/system.diagnostics.debug.4.0.11.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/system.diagnostics.diagnosticsource/4.5.0/system.diagnostics.diagnosticsource.4.5.0.nupkg.sha512",
-    "/Users/ahadjon/.nuget/packages/system.diagnostics.tools/4.0.1/system.diagnostics.tools.4.0.1.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/system.dynamic.runtime/4.0.11/system.dynamic.runtime.4.0.11.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/system.globalization/4.0.11/system.globalization.4.0.11.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/system.io/4.1.0/system.io.4.1.0.nupkg.sha512",
@@ -79,16 +77,11 @@
     "/Users/ahadjon/.nuget/packages/system.runtime.handles/4.0.1/system.runtime.handles.4.0.1.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/system.runtime.interopservices/4.1.0/system.runtime.interopservices.4.1.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/system.runtime.interopservices.runtimeinformation/4.0.0/system.runtime.interopservices.runtimeinformation.4.0.0.nupkg.sha512",
-    "/Users/ahadjon/.nuget/packages/system.runtime.serialization.primitives/4.1.1/system.runtime.serialization.primitives.4.1.1.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/system.text.encoding/4.0.11/system.text.encoding.4.0.11.nupkg.sha512",
-    "/Users/ahadjon/.nuget/packages/system.text.encoding.extensions/4.0.11/system.text.encoding.extensions.4.0.11.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512",
-    "/Users/ahadjon/.nuget/packages/system.text.regularexpressions/4.1.0/system.text.regularexpressions.4.1.0.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/system.threading/4.0.11/system.threading.4.0.11.nupkg.sha512",
     "/Users/ahadjon/.nuget/packages/system.threading.tasks/4.0.11/system.threading.tasks.4.0.11.nupkg.sha512",
-    "/Users/ahadjon/.nuget/packages/system.threading.tasks.extensions/4.5.1/system.threading.tasks.extensions.4.5.1.nupkg.sha512",
-    "/Users/ahadjon/.nuget/packages/system.xml.readerwriter/4.0.11/system.xml.readerwriter.4.0.11.nupkg.sha512",
-    "/Users/ahadjon/.nuget/packages/system.xml.xdocument/4.0.11/system.xml.xdocument.4.0.11.nupkg.sha512"
+    "/Users/ahadjon/.nuget/packages/system.threading.tasks.extensions/4.5.1/system.threading.tasks.extensions.4.5.1.nupkg.sha512"
   ],
   "logs": [
     {

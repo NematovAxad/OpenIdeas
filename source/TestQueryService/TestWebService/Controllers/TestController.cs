@@ -7,7 +7,7 @@ using TestDomain.CodeModels.Responses;
 namespace TestWebService.Controllers;
 
 [ApiController]
-[Route("api/v1/[controller]/[action]")]
+[Route("api/v1/")]
 public class TestController : Controller
 {
     private readonly ISearchService _searchService;
@@ -22,6 +22,10 @@ public class TestController : Controller
         => await _searchService.IsServiceAvailable();
     
     [HttpGet("search")]
-    public async Task<Response<SearchResponse>> Search([FromBody] SearchRequest request)
+    public async Task<Response<SearchResponse>> Search([FromQuery] SearchRequest request)
         => await _searchService.SearchRoute(request);
+    
+    [HttpGet("get_by_id_from_cache")]
+    public async Task<Response<SearchResponse>> Search([FromQuery] Guid guid)
+        => await _searchService.GetByIdFromCache(guid);
 }
