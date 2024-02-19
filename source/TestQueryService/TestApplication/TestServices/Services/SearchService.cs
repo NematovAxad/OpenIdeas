@@ -66,7 +66,25 @@ public class SearchService:ISearchService
         {
             if (!String.IsNullOrEmpty(request.Destination))
                 caachedData = caachedData.Where(d => d.Destination == request.Destination).ToList();
-        
+            
+            if(!String.IsNullOrEmpty(request.Origin))
+                caachedData = caachedData.Where(d => d.Origin == request.Origin).ToList();
+            
+            if (request.OriginDateTime != null)
+                caachedData = caachedData.Where(d => d.OriginDateTime == request.OriginDateTime).ToList();
+
+            if (request.Filters != null && request.Filters.DestinationDateTime != null)
+                caachedData = caachedData.Where(d => d.DestinationDateTime == request.Filters.DestinationDateTime)
+                    .ToList();
+            
+            if(request.Filters != null && request.Filters.MaxPrice!=null && request.Filters.MaxPrice>0)
+                caachedData = caachedData.Where(d => d.Price <= request.Filters.MaxPrice)
+                    .ToList();
+            
+            if(request.Filters != null && request.Filters.MinTimeLimit!=null)
+                caachedData = caachedData.Where(d => d.TimeLimit <= request.Filters.MinTimeLimit)
+                    .ToList();
+            
             result.Routes.AddRange(caachedData!);
             result.Format();
         }
