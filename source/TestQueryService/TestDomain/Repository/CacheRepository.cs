@@ -28,6 +28,20 @@ public class CacheRepository:ICacheRepository
         return route;
     }
 
+    public async Task<List<RouteModel?>?> GetAllAsync(CancellationToken cancellationToken = default)
+    {
+        List<RouteModel?>? routes = null;
+        
+        string? value = null;
+
+        if (!String.IsNullOrEmpty(value))
+        {
+            routes = JsonConvert.DeserializeObject<List<RouteModel?>>(value);
+        }
+
+        return routes;
+    }
+
     public async Task AddAsync(RouteModel entity, CancellationToken cancellationToken = default)
     {
         await _distributedCache.SetStringAsync(entity.Id.ToString(),

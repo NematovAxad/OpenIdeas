@@ -5,11 +5,18 @@ using Newtonsoft.Json;
 using TestApplication.TestServices.Interfaces;
 using TestDomain.CodeModels.Requests;
 using TestDomain.CodeModels.Responses;
+using TestDomain.Repository;
 
 namespace TestApplication.TestServices.Services;
 
 public class ProviderTwoService:IProviderTwoService
 {
+    private readonly ICacheRepository _cacheRepository;
+
+    public ProviderTwoService(ICacheRepository cacheRepository)
+    {
+        _cacheRepository = cacheRepository;
+    }
     public async Task<SearchResponse> SearchRoute(SearchRequest request)
     {
         ProviderTwoSearchRequest secondRequest = new ProviderTwoSearchRequest()
@@ -41,9 +48,9 @@ public class ProviderTwoService:IProviderTwoService
             {
                 var jsonString = await response.Content.ReadAsStringAsync();
                 var secondResult = JsonConvert.DeserializeObject<ProviderTwoSearchResponse>(jsonString);
-                foreach (var providerTwoRoute in secondResult.Routes)
+                foreach (var providerTwoRoute in secondResult?.Routes!)
                 {
-                    result.Routes.Add(new RouteModel()
+                    RouteModel addModel = new RouteModel()
                     {
                         Id = Guid.NewGuid(),
                         Origin = providerTwoRoute.Departure.Point,
@@ -52,7 +59,10 @@ public class ProviderTwoService:IProviderTwoService
                         DestinationDateTime = providerTwoRoute.Arrival.Date,
                         Price = providerTwoRoute.Price,
                         TimeLimit = providerTwoRoute.TimeLimit
-                    });
+                    };
+                    
+                    result.Routes.Add(addModel);
+                    await _cacheRepository.AddAsync(addModel);
                 }
             }
         }

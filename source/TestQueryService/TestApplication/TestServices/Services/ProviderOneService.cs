@@ -5,18 +5,26 @@ using Newtonsoft.Json;
 using TestApplication.TestServices.Interfaces;
 using TestDomain.CodeModels.Requests;
 using TestDomain.CodeModels.Responses;
+using TestDomain.Repository;
 
 namespace TestApplication.TestServices.Services;
 
 public class ProviderOneService:IProviderOneService
 {
+    private readonly ICacheRepository _cacheRepository;
+
+    public ProviderOneService(ICacheRepository cacheRepository)
+    {
+        _cacheRepository = cacheRepository;
+    }
+    
     public async Task<SearchResponse> SearchRoute(SearchRequest request)
     {
         ProviderOneSearchRequest firstRequest = new ProviderOneSearchRequest()
         {
-            From = request.Origin,
-            To = request.Destination,
-            DateFrom = request.OriginDateTime,
+            From = request.Origin!,
+            To = request.Destination!,
+            DateFrom = request.OriginDateTime?? DateTime.Today,
             DateTo = request.Filters?.DestinationDateTime,
             MaxPrice = request.Filters?.MaxPrice
         };
@@ -43,7 +51,7 @@ public class ProviderOneService:IProviderOneService
                 var firstResult = JsonConvert.DeserializeObject<ProviderOneSearchResponse>(jsonString);
                 foreach (var providerOneRoute in firstResult.Routes)
                 {
-                    result.Routes.Add(new RouteModel()
+                    RouteModel addModel = new RouteModel()
                     {
                         Id = Guid.NewGuid(),
                         Origin = providerOneRoute.From,
@@ -52,7 +60,9 @@ public class ProviderOneService:IProviderOneService
                         DestinationDateTime = providerOneRoute.DateTo,
                         Price = providerOneRoute.Price,
                         TimeLimit = providerOneRoute.TimeLimit
-                    });
+                    };
+                    result.Routes.Add(addModel);
+                    await _cacheRepository.AddAsync(addModel);
                 }
             }
         }

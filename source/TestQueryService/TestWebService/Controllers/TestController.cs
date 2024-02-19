@@ -18,14 +18,18 @@ public class TestController : Controller
     }
 
     [HttpGet("checkServices")]
-    public async Task<Response<bool>> Register()
+    public async Task<Response<bool>> Check()
         => await _searchService.IsServiceAvailable();
     
     [HttpGet("search")]
     public async Task<Response<SearchResponse>> Search([FromQuery] SearchRequest request)
         => await _searchService.SearchRoute(request);
     
+    [HttpGet("get_all_from_cache")]
+    public async Task<Response<SearchResponse>> GetCachedData()
+        => await _searchService.GetCachedData();
+    
     [HttpGet("get_by_id_from_cache")]
-    public async Task<Response<SearchResponse>> Search([FromQuery] Guid guid)
+    public async Task<Response<SearchResponse>> SearchByGuid([FromQuery] Guid guid)
         => await _searchService.GetByIdFromCache(guid);
 }

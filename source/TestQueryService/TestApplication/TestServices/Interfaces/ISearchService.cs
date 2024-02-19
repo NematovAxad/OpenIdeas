@@ -7,6 +7,7 @@ namespace TestApplication.TestServices.Interfaces;
 public interface ISearchService
 {
     Task<Response<SearchResponse>> SearchRoute(SearchRequest request);
+    Task<Response<SearchResponse>> GetCachedData();
     Task<Response<SearchResponse>> GetByIdFromCache(Guid guid);
     Task<Response<bool>> IsServiceAvailable();
 }

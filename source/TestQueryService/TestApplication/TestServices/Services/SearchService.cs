@@ -47,6 +47,21 @@ public class SearchService:ISearchService
         return result;
     }
 
+    public async Task<Response<SearchResponse>> GetCachedData()
+    {
+        SearchResponse result = new SearchResponse(){Routes = new List<RouteModel>()};
+
+        List<RouteModel?>? routes = await _cacheRepository.GetAllAsync();
+
+        if (routes != null && routes.Any()) 
+        {
+            result.Routes.AddRange(routes!);
+            result.Format();
+        }
+       
+        return result;
+    }
+
     public async Task<Response<SearchResponse>> GetByIdFromCache(Guid guid)
     {
         SearchResponse result = new SearchResponse(){Routes = new List<RouteModel>()};
