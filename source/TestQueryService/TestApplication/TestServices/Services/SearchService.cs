@@ -32,7 +32,11 @@ public class SearchService:ISearchService
 
         if (request.Filters != null && (bool)request.Filters.OnlyCached!)
         {
-            
+            List<RouteModel?>? list = await _cacheRepository.GetAllAsync();
+            if (list != null && list.Any())
+            {
+                result.Routes.AddRange(list!);
+            }
         }
         else
         {

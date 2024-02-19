@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using StackExchange.Redis;
 using TestInfrastructure.DbContext;
 
 namespace TestInfrastructure;
@@ -48,10 +49,15 @@ public static class Start
                     ValidateIssuerSigningKey = true,
                 };
             });
-        services.AddStackExchangeRedisCache(options =>
-        {
-            options.Configuration = Configs.Redis;
-            options.InstanceName = "RedisDemo_";
-        });
+        services.AddSingleton<IConnectionMultiplexer>(option =>
+            ConnectionMultiplexer.Connect(new ConfigurationOptions{
+   
+      
+                EndPoints = {$"{Configs.RedisHost}:{Configs.RedisPort}"},
+                AbortOnConnectFail = false,
+                Ssl = Configs.RedisIsSsl,
+                Password = Configs.RedisPassword
+    
+            }));
     }
 }

@@ -2,23 +2,24 @@ using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 using TestDomain.CodeModels.Responses;
 using TestDomain.EntityModels;
+using StackExchange.Redis;
 
 namespace TestDomain.Repository;
 
 public class CacheRepository:ICacheRepository
 {
-    public readonly IDistributedCache _distributedCache;
+    public readonly IConnectionMultiplexer ConnectionMultiplexer;
 
-    public CacheRepository(IDistributedCache distributedCache)
+    public CacheRepository(IConnectionMultiplexer connectionMultiplexer)
     {
-        _distributedCache = distributedCache;
+        ConnectionMultiplexer = connectionMultiplexer;
     }
     
-    public async Task<RouteModel?> GetByIdAsync(string key, CancellationToken cancellationToken = default)
+    public async Task<RouteModel?> GetByIdAsync(string key)
     {
         RouteModel? route = null;
         
-        string? value = await _distributedCache.GetStringAsync(key, cancellationToken);
+        string? value = await ConnectionMultiplexer.GetDatabase().StringGetAsync(key);
 
         if (!String.IsNullOrEmpty(value))
         {
@@ -28,24 +29,36 @@ public class CacheRepository:ICacheRepository
         return route;
     }
 
-    public async Task<List<RouteModel?>?> GetAllAsync(CancellationToken cancellationToken = default)
+    public async Task<List<RouteModel?>?> GetAllAsync()
     {
-        List<RouteModel?>? routes = null;
+        List<RouteModel?>? routes = new List<RouteModel?>();
         
-        string? value = null;
+        
+        var endpoint = ConnectionMultiplexer.GetEndPoints().First();
+        var server = ConnectionMultiplexer.GetServer(endpoint);
+        var keys = server.Keys();
 
-        if (!String.IsNullOrEmpty(value))
+        foreach (var key in keys)
         {
-            routes = JsonConvert.DeserializeObject<List<RouteModel?>>(value);
+            RouteModel? route = null;
+        
+            string? value = await ConnectionMultiplexer.GetDatabase().StringGetAsync(key);
+
+            if (!String.IsNullOrEmpty(value))
+            {
+                route = JsonConvert.DeserializeObject<RouteModel>(value);
+            }
+            routes?.Add(route);
         }
+        
+        
 
         return routes;
     }
 
-    public async Task AddAsync(RouteModel entity, CancellationToken cancellationToken = default)
+    public async Task AddAsync(RouteModel entity)
     {
-        await _distributedCache.SetStringAsync(entity.Id.ToString(),
-            JsonConvert.SerializeObject(entity),
-            cancellationToken);
+        await ConnectionMultiplexer.GetDatabase().StringSetAsync(entity.Id.ToString(),
+            JsonConvert.SerializeObject(entity));
     }
 }

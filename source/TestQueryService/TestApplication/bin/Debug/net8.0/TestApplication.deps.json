@@ -767,7 +767,8 @@
       "TestDomain/1.0.0": {
         "dependencies": {
           "GeneralDomain": "1.0.0",
-          "Newtonsoft.Json": "13.0.3"
+          "Newtonsoft.Json": "13.0.3",
+          "StackExchange.Redis": "2.7.17"
         },
         "runtime": {
           "TestDomain.dll": {}

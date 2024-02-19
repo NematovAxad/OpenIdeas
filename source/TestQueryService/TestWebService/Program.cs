@@ -76,10 +76,15 @@ public class Programm
     private static void RegisterAppConfig(ConfigurationManager configuration)
     {
         Configs.TestDatabaseConnection = configuration["ConnectionStrings:PostgresTestConnectionString"];
-        Configs.Redis = configuration["ConnectionStrings:Redis"];
+        
         Configs.SearchUrlOne = configuration["ConnectionStrings:SearchUrlOne"];
         Configs.SearchUrlTwo = configuration["ConnectionStrings:SearchUrlTwo"];
         Configs.CheckUrlOne = configuration["ConnectionStrings:CheckUrlOne"];
         Configs.CheckUrlTwo = configuration["ConnectionStrings:CheckUrlTwo"];
+        
+        Configs.RedisHost = configuration["RedisConnection:Host"];
+        Configs.RedisPort = configuration["RedisConnection:Port"];
+        Configs.RedisIsSsl = Convert.ToBoolean(configuration["RedisConnection:IsSSL"]);
+        Configs.RedisPassword = configuration["RedisConnection:Password"];
     }
 }
