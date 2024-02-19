@@ -30,22 +30,13 @@ public class SearchService:ISearchService
     {
         SearchResponse result = new SearchResponse(){Routes = new List<RouteModel>()};
 
-        if (request.Filters != null && (bool)request.Filters.OnlyCached!)
-        {
-            List<RouteModel?>? list = await _cacheRepository.GetAllAsync();
-            if (list != null && list.Any())
-            {
-                result.Routes.AddRange(list!);
-            }
-        }
-        else
-        {
-            var resultOne = await _providerOneService.SearchRoute(request);
-            var resultTwo = await _providerTwoService.SearchRoute(request);
-            
-            result.Routes.AddRange(resultOne.Routes);
-            result.Routes.AddRange(resultTwo.Routes);
-        }
+        
+        var resultOne = await _providerOneService.SearchRoute(request);
+        var resultTwo = await _providerTwoService.SearchRoute(request);
+        
+        result.Routes.AddRange(resultOne.Routes);
+        result.Routes.AddRange(resultTwo.Routes);
+        
 
         result.Format();
         return result;
@@ -63,6 +54,23 @@ public class SearchService:ISearchService
             result.Format();
         }
        
+        return result;
+    }
+
+    public async Task<Response<SearchResponse>> SearchInCachedData(SearchRequest request)
+    {
+        SearchResponse result = new SearchResponse() { Routes = new List<RouteModel>() };
+        
+        List<RouteModel?>? caachedData = await _cacheRepository.GetAllAsync();
+        if (caachedData != null && caachedData.Any())
+        {
+            if (!String.IsNullOrEmpty(request.Destination))
+                caachedData = caachedData.Where(d => d.Destination == request.Destination).ToList();
+        
+            result.Routes.AddRange(caachedData!);
+            result.Format();
+        }
+
         return result;
     }
 

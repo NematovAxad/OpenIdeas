@@ -8,6 +8,7 @@ public interface ISearchService
 {
     Task<Response<SearchResponse>> SearchRoute(SearchRequest request);
     Task<Response<SearchResponse>> GetCachedData();
+    Task<Response<SearchResponse>> SearchInCachedData(SearchRequest request);
     Task<Response<SearchResponse>> GetByIdFromCache(Guid guid);
     Task<Response<bool>> IsServiceAvailable();
 }

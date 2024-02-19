@@ -23,7 +23,16 @@ public class TestController : Controller
     
     [HttpGet("search")]
     public async Task<Response<SearchResponse>> Search([FromQuery] SearchRequest request)
-        => await _searchService.SearchRoute(request);
+    {
+        if (request.Filters != null && (bool)request.Filters.OnlyCached!)
+        {
+            return  await _searchService.SearchInCachedData(request);
+        }
+        else
+        {
+            return await _searchService.SearchRoute(request);
+        }
+    }
     
     [HttpGet("get_all_from_cache")]
     public async Task<Response<SearchResponse>> GetCachedData()
@@ -32,4 +41,7 @@ public class TestController : Controller
     [HttpGet("get_by_id_from_cache")]
     public async Task<Response<SearchResponse>> SearchByGuid([FromQuery] Guid guid)
         => await _searchService.GetByIdFromCache(guid);
+    
+    
+    
 }
