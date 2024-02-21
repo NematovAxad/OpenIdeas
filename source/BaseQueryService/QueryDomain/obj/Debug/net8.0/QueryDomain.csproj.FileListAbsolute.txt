@@ -1,0 +1,16 @@
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/bin/Debug/net8.0/QueryDomain.deps.json
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/bin/Debug/net8.0/QueryDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/bin/Debug/net8.0/QueryDomain.pdb
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/bin/Debug/net8.0/GeneralDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/bin/Debug/net8.0/GeneralDomain.pdb
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/Debug/net8.0/QueryDomain.csproj.AssemblyReference.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/Debug/net8.0/QueryDomain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/Debug/net8.0/QueryDomain.AssemblyInfoInputs.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/Debug/net8.0/QueryDomain.AssemblyInfo.cs
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/Debug/net8.0/QueryDomain.csproj.CoreCompileInputs.cache
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/Debug/net8.0/QueryDomain.sourcelink.json
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/Debug/net8.0/QueryDomain.csproj.CopyComplete
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/Debug/net8.0/QueryDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/Debug/net8.0/refint/QueryDomain.dll
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/Debug/net8.0/QueryDomain.pdb
+/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/Debug/net8.0/ref/QueryDomain.dll

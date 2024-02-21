@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VBm3r+wSKIaViwDsHssNDBSP1KLFpfAxNMJetNmsz8Y=",
+  "Source": "QueryWebService",
+  "BasePath": "_content/QueryWebService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
