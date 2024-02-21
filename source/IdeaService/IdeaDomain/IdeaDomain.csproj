@@ -10,8 +10,4 @@
       <ProjectReference Include="..\..\..\general\GeneralDomain\GeneralDomain.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Extensions\" />
-    </ItemGroup>
-
 </Project>

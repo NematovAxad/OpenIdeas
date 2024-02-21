@@ -11,7 +11,7 @@ public class Programm
     {
         var builder = WebApplication.CreateBuilder(args);
         RegisterAppConfig(builder.Configuration);
-        builder.WebHost.UseUrls("http://*:5003");
+        builder.WebHost.UseUrls("http://*:5004");
         builder.Services.ApplicationBuild();
         TestInfrastructure.Start.BuildInfrastructure(builder.Services);
 
