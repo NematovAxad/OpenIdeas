@@ -4006,33 +4006,32 @@
     ]
   },
   "packageFolders": {
-    "/Users/ahadjon/.nuget/packages/": {}
+    "/Users/ahadjonnematov/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/QueryWebService.csproj",
+      "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/QueryWebService.csproj",
       "projectName": "QueryWebService",
-      "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/QueryWebService.csproj",
-      "packagesPath": "/Users/ahadjon/.nuget/packages/",
-      "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/obj/",
+      "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/QueryWebService.csproj",
+      "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+      "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+        "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "http://172.16.60.9:2000/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj": {
-              "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj"
+            "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj": {
+              "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj"
             }
           }
         }
@@ -4090,13 +4089,5 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1803",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://172.16.60.9:2000/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
-    }
-  ]
+  }
 }

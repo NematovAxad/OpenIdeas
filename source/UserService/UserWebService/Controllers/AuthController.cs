@@ -9,7 +9,7 @@ using UserDomain.CodeModels.Responses.UserResponses;
 
 namespace UserWebService.Controllers;
 
-[Route("[controller]/[action]")]
+[Route("user_service/api/v1/auth/")]
 [ApiController]
 public class AuthController : Controller
 {

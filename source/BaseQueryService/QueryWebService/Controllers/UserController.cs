@@ -7,7 +7,7 @@ using QueryDomain.CodeModels.Responses.UserQueryResponses;
 
 namespace QueryWebService.Controllers;
 
-[Route("[controller]/[action]")]
+[Route("query_service/api/v1/user/")]
 [ApiController]
 public class UserController : Controller
 {
@@ -19,7 +19,8 @@ public class UserController : Controller
     }
     
     [Authorize]
-    [HttpPost("getuser")]
+    [HttpPost("get_current_user")]
     public async Task<Response<UserQueryResponse>> Get()
         => await _userQueryServices.GetUser(this.UserId());
+    
 }

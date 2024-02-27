@@ -80,5 +80,6 @@ public class Programm
         Configs.DatabaseConnection = configuration["ConnectionStrings:PostgresConnectionString"];
         Configs.UserPhotosPath = configuration["ConnectionStrings:UserPhotoFilePath"];
         Configs.IdeaFilesPath = configuration["ConnectionStrings:IdeaFilePath"];
+        Configs.UserKey = configuration["ConnectionStrings:UserKey"];
     }
 }

@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {}
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {}
   },
   "projects": {
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
         "projectName": "GeneralDomain",
-        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
-        "packagesPath": "/Users/ahadjon/.nuget/packages/",
-        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
+        "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+          "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "http://172.16.60.9:2000/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj": {}
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj": {}
   },
   "projects": {
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
         "projectName": "GeneralDomain",
-        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
-        "packagesPath": "/Users/ahadjon/.nuget/packages/",
-        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
+        "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+          "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "http://172.16.60.9:2000/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -90,31 +89,30 @@
         }
       }
     },
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
         "projectName": "GeneralInfrastructure",
-        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
-        "packagesPath": "/Users/ahadjon/.nuget/packages/",
-        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/obj/",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
+        "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+          "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "http://172.16.60.9:2000/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
               }
             }
           }
@@ -170,31 +168,30 @@
         }
       }
     },
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj",
         "projectName": "IdeaDomain",
-        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj",
-        "packagesPath": "/Users/ahadjon/.nuget/packages/",
-        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj",
+        "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+          "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "http://172.16.60.9:2000/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
               }
             }
           }
@@ -228,34 +225,33 @@
         }
       }
     },
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj",
         "projectName": "IdeaInfrastructure",
-        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj",
-        "packagesPath": "/Users/ahadjon/.nuget/packages/",
-        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/obj/",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/IdeaInfrastructure.csproj",
+        "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaInfrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+          "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "http://172.16.60.9:2000/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
               },
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj"
               }
             }
           }

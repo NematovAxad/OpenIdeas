@@ -1,37 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/QueryWebService.csproj": {}
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/QueryWebService.csproj": {}
   },
   "projects": {
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
         "projectName": "GeneralApplication",
-        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
-        "packagesPath": "/Users/ahadjon/.nuget/packages/",
-        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralApplication/obj/",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
+        "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+          "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "http://172.16.60.9:2000/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
               },
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
               }
             }
           }
@@ -83,23 +82,22 @@
         }
       }
     },
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
         "projectName": "GeneralDomain",
-        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
-        "packagesPath": "/Users/ahadjon/.nuget/packages/",
-        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
+        "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+          "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "http://172.16.60.9:2000/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -169,31 +167,30 @@
         }
       }
     },
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
         "projectName": "GeneralInfrastructure",
-        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
-        "packagesPath": "/Users/ahadjon/.nuget/packages/",
-        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/obj/",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
+        "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+          "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "http://172.16.60.9:2000/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
               }
             }
           }
@@ -249,37 +246,36 @@
         }
       }
     },
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj",
         "projectName": "QueryApplication",
-        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj",
-        "packagesPath": "/Users/ahadjon/.nuget/packages/",
-        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/obj/",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj",
+        "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+          "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "http://172.16.60.9:2000/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj"
               },
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj"
               },
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj"
               }
             }
           }
@@ -313,31 +309,30 @@
         }
       }
     },
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj",
         "projectName": "QueryDomain",
-        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj",
-        "packagesPath": "/Users/ahadjon/.nuget/packages/",
-        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj",
+        "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+          "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "http://172.16.60.9:2000/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
               }
             }
           }
@@ -371,34 +366,33 @@
         }
       }
     },
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj",
         "projectName": "QueryInfrastructure",
-        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj",
-        "packagesPath": "/Users/ahadjon/.nuget/packages/",
-        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/obj/",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj",
+        "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+          "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "http://172.16.60.9:2000/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
               },
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj"
               }
             }
           }
@@ -432,31 +426,30 @@
         }
       }
     },
-    "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/QueryWebService.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/QueryWebService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/QueryWebService.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/QueryWebService.csproj",
         "projectName": "QueryWebService",
-        "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/QueryWebService.csproj",
-        "packagesPath": "/Users/ahadjon/.nuget/packages/",
-        "outputPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/obj/",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/QueryWebService.csproj",
+        "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryWebService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahadjon/.nuget/NuGet/NuGet.Config"
+          "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "http://172.16.60.9:2000/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj": {
-                "projectPath": "/Users/ahadjon/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj"
               }
             }
           }

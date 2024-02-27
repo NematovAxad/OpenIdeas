@@ -69,6 +69,8 @@ public class Programm
 
         app.MapControllers();
 
+        app.UseClaimsMiddleware();
+        
         if (app.Services.GetService<IHttpContextAccessor>() != null)
             HttpContextHelper.Accessor = app.Services.GetRequiredService<IHttpContextAccessor>();
 

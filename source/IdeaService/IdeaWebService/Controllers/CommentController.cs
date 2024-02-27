@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IdeaWebService.Controllers;
-
+[Route("idea_service/api/v1/comment/")]
+[ApiController]
 public class CommentController : Controller
 {
     private readonly IIdeaService _ideaService;
@@ -18,14 +19,14 @@ public class CommentController : Controller
     }
     //[ClaimRequirement("Permission", "CanAddIdeaCommand")]
     [Authorize]
-    [HttpPost("AddIdeaComment")]
+    [HttpPost("add_idea_comment")]
     public async Task<Response<bool>> AddIdeaComment([FromBody] AddIdeaCommentRequest model)
     {
         return   await _ideaService.AddComment(model, this.UserId());
     }
     
     [Authorize]
-    [HttpDelete("DeleteIdeaComment")]
+    [HttpDelete("delete_idea_comment")]
     public async Task<Response<bool>> DeleteIdeaComment([FromQuery] int commentId)
     {
         return   await _ideaService.DeleteComment(commentId, this.UserId());

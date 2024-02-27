@@ -1,6 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using GeneralDomain;
+using GeneralDomain.Configs;
 using GeneralDomain.EntityModels;
 using Microsoft.IdentityModel.Tokens;
 
@@ -17,8 +18,12 @@ public static class UserIdentity
             new Claim("firstName", user.FirstName),
             new Claim("lastName", user.LastName)
         };
+        
         if(!String.IsNullOrEmpty(user.PhotoPath))
             claims.Add(new Claim("photo", user.PhotoPath));
+        
+        if(!String.IsNullOrEmpty(Configs.UserKey))
+            claims.Add(new Claim("userKey", Configs.UserKey));
         
         ClaimsIdentity claimsIdentity =
 
