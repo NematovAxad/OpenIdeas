@@ -31,10 +31,24 @@ public class IdeaService:IIdeaService
             CreateDate = DateTime.Now,
             UpdateDate = DateTime.Now
         };
+        
         if(String.IsNullOrEmpty(request.Body) || String.IsNullOrEmpty(request.Title))
             return new ErrorResponse(HttpStatusCode.BadRequest, "Title or Body is empty");
+
+        
         newIdea.Title = request.Title;
         newIdea.Body = request.Body;
+        
+        if (request.Hashtags != null) 
+            newIdea.Hashtags = request.Hashtags;
+
+        if (request.IsPrivate != null && request is { IsPrivate: true, SharedUsersId.Count: > 0 })
+        {
+            newIdea.IsPrivate = (bool)request.IsPrivate;
+            await AddSharedUsers(request.SharedUsersId);
+        }
+            
+        
         _dbContext.Add(newIdea);
         await _dbContext.SaveChangesAsync();
 
@@ -60,6 +74,17 @@ public class IdeaService:IIdeaService
 
         if (!String.IsNullOrEmpty(request.Body))
             idea.Body = request.Body;
+        
+        if (!String.IsNullOrEmpty(request.Hashtags))
+            idea.Hashtags = request.Hashtags;
+
+        
+        if (request.IsPrivate != null)
+        {
+            idea.IsPrivate = (bool)request.IsPrivate;
+            if (!(bool)request.IsPrivate)
+                await DeleteSharedUsers(idea.Id);
+        }
         
         idea.UpdateDate = DateTime.Now;
 
@@ -186,5 +211,15 @@ public class IdeaService:IIdeaService
                 await _dbContext.SaveChangesAsync();
             }
         }
+    }
+
+    public async Task AddSharedUsers(List<int> usersId, int ideaId)
+    {
+        await Task.CompletedTask;
+    }
+    
+    public async Task DeleteSharedUsers(int ideaId)
+    {
+        await Task.CompletedTask;
     }
 }

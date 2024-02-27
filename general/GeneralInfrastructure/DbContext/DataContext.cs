@@ -22,5 +22,6 @@ public class DataContext:Microsoft.EntityFrameworkCore.DbContext
     public DbSet<IdeaComments> IdeaComments { get; set; }
     public DbSet<IdeaFiles> IdeaFiles { get; set; }
     public DbSet<IdeaRates> IdeaRates { get; set; }
+    public DbSet<SharedIdeas> SharedIdeas { get; set; }
     
 }
