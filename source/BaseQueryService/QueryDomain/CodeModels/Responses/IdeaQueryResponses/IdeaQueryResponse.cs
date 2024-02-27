@@ -4,6 +4,11 @@ namespace QueryDomain.CodeModels.Responses;
 
 public class IdeaQueryResponse
 {
+    public List<IdeaQueryResultModel> Ideas { get; set; }
+}
+
+public class IdeaQueryResultModel
+{
     public int Id { get; set; }
     public int UserId { get; set; }
     public string Title { get; set; }
@@ -20,12 +25,12 @@ public class IdeaQueryResponse
     
     public int IdeaDownCount { get; set; }
     
-    public IReadOnlyCollection<IdeaCommentsQueryModel> Comments { get; set; }
+    public IReadOnlyCollection<IdeaCommentsQueryResulModel> Comments { get; set; }
     
-    public IReadOnlyCollection<IdeaFilesQueryModel> Files { get; set; }
+    public IReadOnlyCollection<IdeaFilesQueryResulModel> Files { get; set; }
 }
 
-public class IdeaCommentsQueryModel
+public class IdeaCommentsQueryResulModel
 {
     public int Id { get; set; }
     
@@ -36,7 +41,7 @@ public class IdeaCommentsQueryModel
     public DateTime CommentDate { get; set; }
 }
 
-public class IdeaFilesQueryModel
+public class IdeaFilesQueryResulModel
 {
     public int Id { get; set; }
     public string FilePath { get; set; }
