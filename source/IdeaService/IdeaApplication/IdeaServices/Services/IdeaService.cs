@@ -1,5 +1,6 @@
 using System.Net;
 using GeneralApplication.Extensions;
+using GeneralApplication.Interfaces;
 using GeneralDomain.EntityModels;
 using GeneralDomain.Responses;
 using GeneralInfrastructure.DbContext;
@@ -13,82 +14,68 @@ namespace IdeaApplication.IdeaServices.Services;
 public class IdeaService:IIdeaService
 {
     private readonly DataContext _dbContext;
+    private readonly IGetByIdGlobalService _globalService;
 
-    public IdeaService(DataContext dbContext)
+    public IdeaService(DataContext dbContext, IGetByIdGlobalService globalService)
     {
         _dbContext = dbContext;
+        _globalService = globalService;
     }
     public async Task<Response<bool>> AddNewIdea(IdeaAddRequest request, int userId)
     {
-        var user = _dbContext.User.FirstOrDefault(u => u.Id == userId);
+        var user = _globalService.User(userId);
 
-        if (user == null)
-            return new ErrorResponse(HttpStatusCode.Unauthorized, "User not found!");
-
-        Idea newIdea = new Idea()
+        Idea newIdea = new Idea
         {
-            UserId = userId,
+            UserId = user.Result.Id,
             CreateDate = DateTime.Now,
-            UpdateDate = DateTime.Now
+            UpdateDate = DateTime.Now,
+            Title = request.Title,
+            Body = request.Body,
+            Hashtags = request.Hashtags!,
+            IsPrivate = (bool)request.IsPrivate!
         };
-        
-        if(String.IsNullOrEmpty(request.Body) || String.IsNullOrEmpty(request.Title))
-            return new ErrorResponse(HttpStatusCode.BadRequest, "Title or Body is empty");
 
-        
-        newIdea.Title = request.Title;
-        newIdea.Body = request.Body;
-        
-        if (request.Hashtags != null) 
-            newIdea.Hashtags = request.Hashtags;
 
-        if (request.IsPrivate != null && request is { IsPrivate: true, SharedUsersId.Count: > 0 })
-        {
-            newIdea.IsPrivate = (bool)request.IsPrivate;
-            await AddSharedUsers(request.SharedUsersId);
-        }
-            
-        
         _dbContext.Add(newIdea);
         await _dbContext.SaveChangesAsync();
 
         if(request.Files != null && request.Files.Any())
             await AddIdeaFiles(request.Files, newIdea.Id);
         
+        if (request.IsPrivate != null && request is { IsPrivate: true, SharedUsersId.Count: > 0 })
+            await AddSharedUsers(request.SharedUsersId, newIdea.Id);
+        
+        
         return true;
     }
 
     public async Task<Response<bool>> EditIdea(IdeaEditRequest request, int userId)
     {
-        var user = _dbContext.User.FirstOrDefault(u => u.Id == userId);
+        var user = _globalService.User(userId);
 
-        if (user == null)
-            return new ErrorResponse(HttpStatusCode.Unauthorized, "User not found");
-
-        var idea = _dbContext.Idea.FirstOrDefault(i => i.Id == request.IdeaId && i.UserId == userId);
-        if (idea == null)
-            return new ErrorResponse(HttpStatusCode.NotFound, "Idea not found");
+        var idea = _globalService.UserIdea(user.Result.Id, request.IdeaId);
 
         if (!String.IsNullOrEmpty(request.Title))
-            idea.Title = request.Title;
+            idea.Result.Title = request.Title;
 
         if (!String.IsNullOrEmpty(request.Body))
-            idea.Body = request.Body;
+            idea.Result.Body = request.Body;
         
         if (!String.IsNullOrEmpty(request.Hashtags))
-            idea.Hashtags = request.Hashtags;
+            idea.Result.Hashtags = request.Hashtags;
 
         
         if (request.IsPrivate != null)
         {
-            idea.IsPrivate = (bool)request.IsPrivate;
+            idea.Result.IsPrivate = (bool)request.IsPrivate;
             if (!(bool)request.IsPrivate)
-                await DeleteSharedUsers(idea.Id);
+                await DeleteSharedUsers(idea.Result.Id);
         }
         
-        idea.UpdateDate = DateTime.Now;
+        idea.Result.UpdateDate = DateTime.Now;
 
-        _dbContext.Idea.Update(idea);
+        _dbContext.Idea.Update(idea.Result);
         await _dbContext.SaveChangesAsync();
 
         return true;
@@ -96,16 +83,11 @@ public class IdeaService:IIdeaService
 
     public async Task<Response<bool>> DeleteIdea(int ideaId, int userId)
     {
-        var user = _dbContext.User.FirstOrDefault(u => u.Id == userId);
+        var user = _globalService.User(userId);
 
-        if (user == null)
-            return new ErrorResponse(HttpStatusCode.Unauthorized, "User not found");
+        var idea = _globalService.UserIdea(user.Result.Id, ideaId);
 
-        var idea = _dbContext.Idea.FirstOrDefault(i => i.Id == ideaId && i.UserId == userId);
-        if (idea == null)
-            return new ErrorResponse(HttpStatusCode.NotFound, "Idea not found");
-
-        _dbContext.Idea.Remove(idea);
+        _dbContext.Idea.Remove(idea.Result);
         await _dbContext.SaveChangesAsync();
 
         return true;
@@ -113,18 +95,13 @@ public class IdeaService:IIdeaService
 
     public async Task<Response<bool>> MarkIdea(IdeaRateRequest request, int userId)
     {
-        var user = _dbContext.User.Where(u => u.Id == userId).Include(mbox=>mbox.IdeaRates).FirstOrDefault();
+        var user = _globalService.User(userId);
 
-        if (user == null)
-            return new ErrorResponse(HttpStatusCode.Unauthorized, "User not found");
-        
-        var idea = _dbContext.Idea.FirstOrDefault(i => i.Id == request.IdeaId);
-        if (idea == null)
-            return new ErrorResponse(HttpStatusCode.NotFound, "Idea not found");
+        var idea = _globalService.Idea(request.IdeaId);
 
-        if (user.IdeaRates.Any(i => i.IdeaId == request.IdeaId))
+        if (user.Result.IdeaRates.Any(i => i.IdeaId == idea.Result.Id))
         {
-            var ideaRate = user.IdeaRates.FirstOrDefault(i => i.IdeaId == request.IdeaId);
+            var ideaRate = user.Result.IdeaRates.FirstOrDefault(i => i.IdeaId == idea.Result.Id);
             if (ideaRate != null)
             {
                 ideaRate.IdeaMark = request.Mark;
@@ -135,8 +112,8 @@ public class IdeaService:IIdeaService
         {
             IdeaRates newRate = new IdeaRates()
             {
-                IdeaId = idea.Id,
-                UserId = user.Id,
+                IdeaId = idea.Result.Id,
+                UserId = user.Result.Id,
                 IdeaMark = request.Mark,
                 RateDate = DateTime.Now
             };
@@ -144,48 +121,6 @@ public class IdeaService:IIdeaService
             _dbContext.IdeaRates.Add(newRate);
         }
 
-        await _dbContext.SaveChangesAsync();
-
-        return true;
-    }
-
-    public async Task<Response<bool>> AddComment(AddIdeaCommentRequest request, int userId)
-    {
-        var user = _dbContext.User.FirstOrDefault(u => u.Id == userId);
-
-        if (user == null)
-            return new ErrorResponse(HttpStatusCode.Unauthorized, "User not found");
-        
-        var idea = _dbContext.Idea.FirstOrDefault(i => i.Id == request.IdeaId);
-        if (idea == null)
-            return new ErrorResponse(HttpStatusCode.NotFound, "Idea not found");
-
-        IdeaComments newComment = new IdeaComments()
-        {
-            IdeaId = request.IdeaId,
-            UserId = user.Id,
-            Comment = request.Comment ?? string.Empty,
-            CommentDate = DateTime.Now
-        };
-
-        _dbContext.IdeaComments.Add(newComment);
-        await _dbContext.SaveChangesAsync();
-
-        return true;
-    }
-    
-    public async Task<Response<bool>> DeleteComment(int commentId, int userId)
-    {
-        var user = _dbContext.User.FirstOrDefault(u => u.Id == userId);
-
-        if (user == null)
-            return new ErrorResponse(HttpStatusCode.Unauthorized, "User not found");
-        
-        var comment = _dbContext.IdeaComments.FirstOrDefault(c => c.Id == commentId && c.UserId == userId);
-        if (comment == null)
-            return new ErrorResponse(HttpStatusCode.NotFound, "Comment not found");
-
-        _dbContext.IdeaComments.Remove(comment);
         await _dbContext.SaveChangesAsync();
 
         return true;
@@ -215,11 +150,30 @@ public class IdeaService:IIdeaService
 
     public async Task AddSharedUsers(List<int> usersId, int ideaId)
     {
-        await Task.CompletedTask;
+        List<SharedIdeas> listToAdd = new List<SharedIdeas>();
+        foreach (var userId in usersId)
+        {
+            var user = _globalService.User(userId);
+
+            SharedIdeas shared = new SharedIdeas()
+            {
+                IdeaId = ideaId,
+                UserId = user.Result.Id,
+                SharedDate = DateTime.Now
+            };
+            
+            listToAdd.Add(shared);
+        }
+
+        _dbContext.SharedIdeas.AddRange(listToAdd);
+        await _dbContext.SaveChangesAsync();
     }
     
     public async Task DeleteSharedUsers(int ideaId)
     {
-        await Task.CompletedTask;
+        var sharedUsers = _dbContext.SharedIdeas.Where(i => i.IdeaId == ideaId);
+        
+        _dbContext.SharedIdeas.RemoveRange(sharedUsers);
+        await _dbContext.SaveChangesAsync();
     }
 }

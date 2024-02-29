@@ -11,24 +11,24 @@ namespace IdeaWebService.Controllers;
 [ApiController]
 public class CommentController : Controller
 {
-    private readonly IIdeaService _ideaService;
+    private readonly IIdeaCommentService _commentService;
 
-    public CommentController(IIdeaService ideaService)
+    public CommentController(IIdeaCommentService commentService)
     {
-        _ideaService = ideaService;
+        _commentService = commentService;
     }
     //[ClaimRequirement("Permission", "CanAddIdeaCommand")]
     [Authorize]
     [HttpPost("add_idea_comment")]
     public async Task<Response<bool>> AddIdeaComment([FromBody] AddIdeaCommentRequest model)
     {
-        return   await _ideaService.AddComment(model, this.UserId());
+        return   await _commentService.AddComment(model, this.UserId());
     }
     
     [Authorize]
     [HttpDelete("delete_idea_comment")]
     public async Task<Response<bool>> DeleteIdeaComment([FromQuery] int commentId)
     {
-        return   await _ideaService.DeleteComment(commentId, this.UserId());
+        return   await _commentService.DeleteComment(commentId, this.UserId());
     }
 }

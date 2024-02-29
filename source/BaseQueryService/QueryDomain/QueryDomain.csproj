@@ -11,8 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="CodeModels\Requests\UserQueryRequests\" />
-      <Folder Include="Extensions\" />
+      <Folder Include="CodeModels\Requests\IdeaQueryRequests\" />
     </ItemGroup>
 
 </Project>

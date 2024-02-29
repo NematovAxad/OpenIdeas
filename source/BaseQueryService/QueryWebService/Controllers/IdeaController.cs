@@ -3,8 +3,8 @@ using GeneralDomain.Responses;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using QueryApplication.QueryServices.Interfaces;
-using QueryDomain.CodeModels.Requests;
 using QueryDomain.CodeModels.Responses;
+using QueryDomain.CodeModels.Responses.IdeaQueryResponses;
 using QueryDomain.CodeModels.Responses.UserQueryResponses;
 
 namespace QueryWebService.Controllers;
@@ -22,6 +22,16 @@ public class IdeaController : Controller
     
     [Authorize]
     [HttpPost("get_ideas")]
-    public async Task<Response<IdeaQueryResponse>> Get([FromForm] IdeaQueryRequest request)
-        => await _ideaQueryService.GetIdeas(request, this.UserId());
+    public async Task<Response<IdeaQueryResponse>> Get()
+        => await _ideaQueryService.GetIdeas(this.UserId());
+    
+    [Authorize]
+    [HttpPost("get_my_ideas")]
+    public async Task<Response<IdeaQueryResponse>> GetMyIdeas()
+        => await _ideaQueryService.GetMyIdeas(this.UserId());
+    
+    [Authorize]
+    [HttpPost("get_my_shared_ideas")]
+    public async Task<Response<IdeaQueryResponse>> GetMySharedIdeas()
+        => await _ideaQueryService.GetMySharedIdeas(this.UserId());
 }

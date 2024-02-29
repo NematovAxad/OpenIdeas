@@ -1,42 +1,42 @@
 using GeneralDomain.EntityModels;
 
-namespace QueryDomain.CodeModels.Responses;
+namespace QueryDomain.CodeModels.Responses.IdeaQueryResponses;
 
 public class IdeaQueryResponse
 {
-    public List<IdeaQueryResultModel> Ideas { get; set; }
+    public List<IdeaQueryResultModel>? Ideas { get; set; }
 }
 
 public class IdeaQueryResultModel
 {
     public int Id { get; set; }
     public int UserId { get; set; }
-    public string Title { get; set; }
+    public required string Title { get; set; }
     
-    public string Body { get; set; }
+    public required string Body { get; set; }
     
     public DateTime CreateDate { get; set; }
     
     public DateTime UpdateDate { get; set; }
     
-    public int IdeaRate { get; set; }
-    
+    public int IdeaRate => (IdeaUpCount-IdeaDownCount);
+
     public int IdeaUpCount { get; set; }
-    
+
     public int IdeaDownCount { get; set; }
     
-    public IReadOnlyCollection<IdeaCommentsQueryResulModel> Comments { get; set; }
+    public ICollection<IdeaCommentsQueryResulModel>? Comments { get; set; }
     
-    public IReadOnlyCollection<IdeaFilesQueryResulModel> Files { get; set; }
+    public ICollection<IdeaFilesQueryResulModel>? Files { get; set; }
 }
 
 public class IdeaCommentsQueryResulModel
 {
     public int Id { get; set; }
     
-    public User CommentedUser { get; set; }
+    public required CommentUser CommentedUser { get; set; }
     
-    public string Comment { get; set; }
+    public required string Comment { get; set; }
     
     public DateTime CommentDate { get; set; }
 }
@@ -44,6 +44,13 @@ public class IdeaCommentsQueryResulModel
 public class IdeaFilesQueryResulModel
 {
     public int Id { get; set; }
-    public string FilePath { get; set; }
+    public required string FilePath { get; set; }
     public DateTime FileDate { get; set; }
+}
+
+public class CommentUser
+{
+    public required int Id { get; set; }
+    
+    public required string Username { get; set; }
 }

@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Http;
 
@@ -9,11 +10,13 @@ public class IdeaAddRequest
     
     public string? Hashtags { get; set; }
     
-    public string? Title { get; set; }
+    [Required]
+    public required string Title { get; set; }
     
-    public string? Body { get; set; }
+    [Required]
+    public required string Body { get; set; }
     
     public List<IFormFile>? Files { get; set; }
     
-    public List<int> SharedUsersId { get; set; }
+    public List<int>? SharedUsersId { get; set; }
 }

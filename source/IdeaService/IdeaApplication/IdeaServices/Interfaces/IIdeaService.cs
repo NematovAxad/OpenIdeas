@@ -13,8 +13,4 @@ public interface IIdeaService
     Task<Response<bool>> DeleteIdea(int ideaId, int userId);
 
     Task<Response<bool>> MarkIdea(IdeaRateRequest request, int userId);
-    
-    Task<Response<bool>> AddComment(AddIdeaCommentRequest request, int userId);
-    
-    Task<Response<bool>> DeleteComment(int commentId, int userId);
 }

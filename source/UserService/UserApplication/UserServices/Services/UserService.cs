@@ -1,5 +1,6 @@
 using System.Net;
 using GeneralApplication.Extensions;
+using GeneralApplication.Interfaces;
 using GeneralDomain.EntityModels;
 using GeneralDomain.Extensions;
 using GeneralDomain.Responses;
@@ -14,10 +15,12 @@ namespace UserApplication.UserServices.Services;
 public class UserService:IUserService
 {
     private readonly DataContext _dbContext;
+    private readonly IGetByIdGlobalService _globalService;
 
-    public UserService(DataContext dbContext)
+    public UserService(DataContext dbContext, IGetByIdGlobalService globalService)
     {
         _dbContext = dbContext;
+        _globalService = globalService;
     }
     
     public async Task<Response<bool>> RegisterUser(UserRegisterRequest request)
@@ -81,20 +84,14 @@ public class UserService:IUserService
 
     public async Task<Response<bool>> AddUserPhoto(UserPhotoAddRequest request)
     {
-        if (request.UserId == 0 || request.Photo.Equals(null))
-            return new ErrorResponse(HttpStatusCode.Unauthorized, "Token expired or file path not exist");
-        
-        
-        var user = _dbContext.User.FirstOrDefault(u => u.Id == request.UserId);
-        if (user == null)
-            return new ErrorResponse(HttpStatusCode.Unauthorized, "UserNotFound");
+        var user = _globalService.User(request.UserId);
         
         string? path = FileSaver.AddFile(request.Photo, "userPhotos");
         if(String.IsNullOrEmpty(path))
             return new ErrorResponse(HttpStatusCode.BadRequest, "Couldn't save file");
 
-        user.PhotoPath = path;
-        _dbContext.User.Update(user);
+        user.Result.PhotoPath = path;
+        _dbContext.User.Update(user.Result);
         await _dbContext.SaveChangesAsync();
 
         return true;
@@ -102,15 +99,11 @@ public class UserService:IUserService
 
     public async Task<Response<bool>> DeleteUserPhoto(UserPhotoDeleteRequest request)
     {
-        if (request.UserId == 0)
-            return new ErrorResponse(HttpStatusCode.Unauthorized, "User Id required");
+        var user = _globalService.User(request.UserId);
         
-        var user = _dbContext.User.FirstOrDefault(u => u.Id == request.UserId);
-        if (user == null)
-            return new ErrorResponse(HttpStatusCode.Unauthorized, "UserNotFound");
+        user.Result.PhotoPath = string.Empty;
         
-        user.PhotoPath = string.Empty;
-        _dbContext.User.Update(user);
+        _dbContext.User.Update(user.Result);
         await _dbContext.SaveChangesAsync();
 
         return true;

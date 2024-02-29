@@ -1,5 +1,7 @@
 using System.Net;
 using GeneralApplication.Extensions;
+using GeneralApplication.Interfaces;
+using GeneralApplication.Services;
 using GeneralDomain.EntityModels;
 using GeneralDomain.Responses;
 using GeneralInfrastructure.DbContext;
@@ -13,17 +15,20 @@ namespace IdeaApplication.IdeaServices.Services;
 public class FileService:IFileService
 {
     private readonly DataContext _dbContext;
+    private readonly IGetByIdGlobalService _globalService;
 
-    public FileService(DataContext dbContext)
+    public FileService(DataContext dbContext, IGetByIdGlobalService globalService)
     {
         _dbContext = dbContext;
+        _globalService = globalService;
     }
     public async Task<Response<AddIdeaFileResponse>> AddIdeaFile(AddIdeaFileRequest request, int userId)
     {
         AddIdeaFileResponse result = new AddIdeaFileResponse();
-        var idea = _dbContext.Idea.FirstOrDefault(i => i.Id == request.IdeaId && i.UserId == userId);
-        if (idea == null)
-            return new ErrorResponse(HttpStatusCode.NotFound, "Idea not found");
+
+        var user = _globalService.User(userId);
+
+        var idea = _globalService.UserIdea(user.Result.Id, request.IdeaId);
         
         string? path = FileSaver.AddFile(request.File, "ideaFiles");
 
@@ -32,7 +37,7 @@ public class FileService:IFileService
         
         IdeaFiles newFile = new IdeaFiles()
         {
-            IdeaId = request.IdeaId,
+            IdeaId = idea.Result.Id,
             FilePath = path,
             FileDate = DateTime.Now
         };

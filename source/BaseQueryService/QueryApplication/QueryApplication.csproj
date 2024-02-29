@@ -12,8 +12,4 @@
       <ProjectReference Include="..\QueryInfrastructure\QueryInfrastructure.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Extensions\" />
-    </ItemGroup>
-
 </Project>

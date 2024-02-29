@@ -31,6 +31,6 @@ public static class FileSaver
         }
         Console.WriteLine(path);
         File.WriteAllBytes(path, bytes);
-        return name;
+        return path;
     }
 }

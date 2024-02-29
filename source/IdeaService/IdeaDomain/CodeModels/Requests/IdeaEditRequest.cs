@@ -5,7 +5,7 @@ namespace IdeaDomain.CodeModels.Requests;
 public class IdeaEditRequest
 {
     [Required]
-    public int IdeaId { get; set; }
+    public required int IdeaId { get; set; }
     
     public bool? IsPrivate { get; set; }
     
