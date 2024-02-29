@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ba4aP1xcGouRg4L1jYRsfH7SS7mjIObqlRzJ5M3UGU+fb6D5HCyjt3hzlFtbWr1LrIqveJDoGzftnIKq4fTfhg==",
+  "dgSpecHash": "0JxaInlB5lgN4fDCzsdvWmY9IDTsVUzxJu8bJXwM6xdet6Qcw3oLg+DRp5FMVO54+aPJ3xl1mXQ7xntlMy0WUg==",
   "success": true,
-  "projectFilePath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaWebService/IdeaWebService.csproj",
+  "projectFilePath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/IdeaService/IdeaWebService/IdeaWebService.csproj",
   "expectedPackageFiles": [
     "/Users/ahadjonnematov/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
     "/Users/ahadjonnematov/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.0/fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
