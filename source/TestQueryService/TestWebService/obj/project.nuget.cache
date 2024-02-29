@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LKM8D81RqyBRV/8zB5I1LeQ6wBv25lHNCeHE7v1xD9Eo6oAZOEkAEghVv/uxK2yC6ByAaLcm16HEhQVNS9yEtA==",
+  "dgSpecHash": "WADWxKCoTK1Eqnj7y6oylsbc3ymshZPG1+ketDpCAfuSAvRbJr+Rd98QPdFOUYoCMM852Fh/+nAncsyQSLIz2Q==",
   "success": true,
-  "projectFilePath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/TestWebService.csproj",
+  "projectFilePath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestWebService/TestWebService.csproj",
   "expectedPackageFiles": [
     "/Users/ahadjonnematov/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
     "/Users/ahadjonnematov/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.0/fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j4DKupN0v8kfGGjRZkr+gwdJvfUxUH/mg4qrajRrAkNKh8FALb3WfsCi84SpR/9nQLDhpnT2+CHVJsimBN6klA==",
+  "dgSpecHash": "zhJPUMrilKfVsI/xDCYKVibBNcXZeVRDFHc+pnDscF+Za0ImYt57jcIL/e1oLoQEThsw0ic/9KyLylHUhLHxwg==",
   "success": true,
-  "projectFilePath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
+  "projectFilePath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/ahadjonnematov/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
     "/Users/ahadjonnematov/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.0/fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
