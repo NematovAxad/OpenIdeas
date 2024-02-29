@@ -1,4 +1,5 @@
 using System.Net;
+using GeneralApplication.Interfaces;
 using GeneralDomain.EntityModels;
 using GeneralDomain.Responses;
 using GeneralInfrastructure.DbContext;
@@ -10,10 +11,12 @@ namespace QueryApplication.QueryServices.Services;
 public class UserQueryService:IUserQueryService
 {
     private readonly DataContext _dbContext;
+    private readonly IGetByIdGlobalService _globalService;
 
-    public UserQueryService(DataContext dbContext)
+    public UserQueryService(DataContext dbContext, IGetByIdGlobalService globalService)
     {
         _dbContext = dbContext;
+        _globalService = globalService;
     }
     public async Task<Response<UserQueryResponse>> GetUser(int id)
     {
@@ -33,5 +36,28 @@ public class UserQueryService:IUserQueryService
         response.Email = user.Email;
 
         return response;
+    }
+
+    public async Task<Response<UserSearchQueryResponse>> SearchUser(int userId, string text)
+    {
+        UserSearchQueryResponse result = new UserSearchQueryResponse() { Users = new List<UserSearchResultModel>()};
+        
+        var searchingUser = _globalService.User(userId);
+
+        var users = _dbContext.User
+            .Where(u => u.UserName.ToLower().Contains(text.ToLower()) && u.Id != searchingUser.Result.Id).ToList();
+
+        foreach (var user in users)
+        {
+            UserSearchResultModel foundUser = new UserSearchResultModel()
+            {
+                Id = user.Id,
+                Username = user.UserName
+            };
+            
+            result.Users.Add(foundUser);
+        }
+
+        return result;
     }
 }

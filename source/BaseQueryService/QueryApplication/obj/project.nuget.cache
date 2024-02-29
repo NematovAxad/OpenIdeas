@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s5UerKZss6Cr6Hq734t7IHOy5AZi9UZWsh01NP8/GwELKlw3mCh1aU77XAMA86rx9A4BhwvBg6kIASzdKi2kbw==",
+  "dgSpecHash": "PLVXuBAj9PwX6M+DtaA3ATK5Re4QgUkLiTrM5GeSxvwA5m0Vfo/CZfdQgGXDLWGOwXYTC4U985Hx/4zhEbjuMw==",
   "success": true,
-  "projectFilePath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj",
+  "projectFilePath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj",
   "expectedPackageFiles": [
     "/Users/ahadjonnematov/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
     "/Users/ahadjonnematov/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.0/fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",

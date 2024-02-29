@@ -23,4 +23,9 @@ public class UserController : Controller
     public async Task<Response<UserQueryResponse>> Get()
         => await _userQueryServices.GetUser(this.UserId());
     
+    [Authorize]
+    [HttpPost("search_user")]
+    public async Task<Response<UserSearchQueryResponse>> Search([FromQuery] string searchText)
+        => await _userQueryServices.SearchUser(this.UserId(), searchText);
+    
 }

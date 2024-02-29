@@ -3204,11 +3204,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
+      "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
       "projectName": "GeneralDomain",
-      "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
+      "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
       "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
-      "outputPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/obj/",
+      "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iWoM8jAaAboHhln8wrFdCWBE6ezb1Q5PIDNNbfb+QkHfQ0RNfDwsUtbG6T+inTzAG+rH3S17lGblCjDiUq+xsA==",
+  "dgSpecHash": "XCurEGsOx0sJdHYLZC4ZJAtWOEN0wdZkwwQkRn9//cUTniP7q0b0JdSkifysftwkxCVO4k/R5aTNdwf6EIcGSQ==",
   "success": true,
-  "projectFilePath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj",
+  "projectFilePath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/IdeaService/IdeaDomain/IdeaDomain.csproj",
   "expectedPackageFiles": [
     "/Users/ahadjonnematov/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
     "/Users/ahadjonnematov/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.0/fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",

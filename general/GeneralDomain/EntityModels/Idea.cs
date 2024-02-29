@@ -37,4 +37,6 @@ public class Idea
     public IReadOnlyCollection<IdeaFiles> Files { get; set; }
     
     public IReadOnlyCollection<IdeaRates> Rates { get; set; }
+    
+    public IReadOnlyCollection<SharedIdeas> SharedUsers { get; set; }
 }

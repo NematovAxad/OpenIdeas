@@ -5007,11 +5007,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
+      "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
       "projectName": "GeneralApplication",
-      "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
+      "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
       "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
-      "outputPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralApplication/obj/",
+      "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
@@ -5026,11 +5026,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
-              "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
+            "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+              "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
             },
-            "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
-              "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
+            "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
+              "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
             }
           }
         }

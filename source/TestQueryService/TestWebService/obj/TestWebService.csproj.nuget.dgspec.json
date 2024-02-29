@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestWebService/TestWebService.csproj": {}
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/TestWebService.csproj": {}
   },
   "projects": {
-    "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
         "projectName": "GeneralApplication",
-        "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj",
         "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
-        "outputPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralApplication/obj/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
-                "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
               },
-              "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
-                "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
         "projectName": "GeneralDomain",
-        "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj",
         "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
-        "outputPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/obj/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
@@ -167,14 +167,14 @@
         }
       }
     },
-    "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
         "projectName": "GeneralInfrastructure",
-        "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj",
         "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
-        "outputPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralInfrastructure/obj/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
@@ -189,8 +189,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
-                "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
               }
             }
           }
@@ -246,14 +246,14 @@
         }
       }
     },
-    "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestApplication/TestApplication.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestApplication/TestApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestApplication/TestApplication.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestApplication/TestApplication.csproj",
         "projectName": "TestApplication",
-        "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestApplication/TestApplication.csproj",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestApplication/TestApplication.csproj",
         "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
-        "outputPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestApplication/obj/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestApplication/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
@@ -268,17 +268,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj": {
-                "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj"
               },
-              "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
-                "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralInfrastructure/GeneralInfrastructure.csproj"
               },
-              "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj": {
-                "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj"
               },
-              "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestInfrastructure/TestInfrastructure.csproj": {
-                "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestInfrastructure/TestInfrastructure.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestInfrastructure/TestInfrastructure.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestInfrastructure/TestInfrastructure.csproj"
               }
             }
           }
@@ -312,14 +312,14 @@
         }
       }
     },
-    "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj",
         "projectName": "TestDomain",
-        "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj",
         "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
-        "outputPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestDomain/obj/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
@@ -334,8 +334,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
-                "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralDomain/GeneralDomain.csproj"
               }
             }
           }
@@ -379,14 +379,14 @@
         }
       }
     },
-    "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestInfrastructure/TestInfrastructure.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestInfrastructure/TestInfrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestInfrastructure/TestInfrastructure.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestInfrastructure/TestInfrastructure.csproj",
         "projectName": "TestInfrastructure",
-        "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestInfrastructure/TestInfrastructure.csproj",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestInfrastructure/TestInfrastructure.csproj",
         "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
-        "outputPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestInfrastructure/obj/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestInfrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
@@ -401,8 +401,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj": {
-                "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestDomain/TestDomain.csproj"
               }
             }
           }
@@ -454,14 +454,14 @@
         }
       }
     },
-    "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestWebService/TestWebService.csproj": {
+    "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/TestWebService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestWebService/TestWebService.csproj",
+        "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/TestWebService.csproj",
         "projectName": "TestWebService",
-        "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestWebService/TestWebService.csproj",
+        "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/TestWebService.csproj",
         "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
-        "outputPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestWebService/obj/",
+        "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestWebService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
@@ -476,8 +476,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestApplication/TestApplication.csproj": {
-                "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/TestQueryService/TestApplication/TestApplication.csproj"
+              "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestApplication/TestApplication.csproj": {
+                "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/TestQueryService/TestApplication/TestApplication.csproj"
               }
             }
           }

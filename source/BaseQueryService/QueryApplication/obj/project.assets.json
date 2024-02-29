@@ -5064,11 +5064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj",
+      "projectUniqueName": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj",
       "projectName": "QueryApplication",
-      "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj",
+      "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/QueryApplication.csproj",
       "packagesPath": "/Users/ahadjonnematov/.nuget/packages/",
-      "outputPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/BaseQueryService/QueryApplication/obj/",
+      "outputPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryApplication/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ahadjonnematov/.nuget/NuGet/NuGet.Config"
@@ -5083,14 +5083,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj": {
-              "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj"
+            "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj": {
+              "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/general/GeneralApplication/GeneralApplication.csproj"
             },
-            "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj": {
-              "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj"
+            "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj": {
+              "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryDomain/QueryDomain.csproj"
             },
-            "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj": {
-              "projectPath": "/Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj"
+            "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj": {
+              "projectPath": "/Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/QueryInfrastructure.csproj"
             }
           }
         }

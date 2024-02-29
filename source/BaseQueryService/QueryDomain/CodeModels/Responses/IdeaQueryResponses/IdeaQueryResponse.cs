@@ -15,6 +15,8 @@ public class IdeaQueryResultModel
     
     public required string Body { get; set; }
     
+    public required bool IsPrivate { get; set; }
+    
     public DateTime CreateDate { get; set; }
     
     public DateTime UpdateDate { get; set; }
@@ -24,6 +26,8 @@ public class IdeaQueryResultModel
     public int IdeaUpCount { get; set; }
 
     public int IdeaDownCount { get; set; }
+    
+    public ICollection<SharedUser>? SharedUsers { get; set; }
     
     public ICollection<IdeaCommentsQueryResulModel>? Comments { get; set; }
     
@@ -51,6 +55,13 @@ public class IdeaFilesQueryResulModel
 public class CommentUser
 {
     public required int Id { get; set; }
+    
+    public required string Username { get; set; }
+}
+
+public class SharedUser
+{
+    public int Id { get; set; }
     
     public required string Username { get; set; }
 }

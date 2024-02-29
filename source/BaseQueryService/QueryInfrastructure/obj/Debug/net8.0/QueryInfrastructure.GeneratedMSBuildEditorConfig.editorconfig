@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QueryInfrastructure
-build_property.ProjectDir = /Users/ahadjonnematov/Desktop/startup/OpenIdeas/source/BaseQueryService/QueryInfrastructure/
+build_property.ProjectDir = /Users/ahadjonnematov/Desktop/projects/OpenIdeas/source/BaseQueryService/QueryInfrastructure/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
